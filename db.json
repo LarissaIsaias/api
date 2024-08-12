@@ -1,0 +1,81 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Amigurumi de raposa",
+            "descricao": "Raposa de pelúcia feita de crochê",
+            "preco": 20.00,
+            "imagem": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3D5XCAz25hXWM&psig=AOvVaw2UCq4MwGp5oDkbmW-gQVT8&ust=1721158431537000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCMzY3lqYcDFQAAAAAdAAAAABAE"
+        },
+        {
+            "id": 2,
+            "nome": "Amigurumi de batman",
+            "descricao": "batman de pelúcia feita de crochê",
+            "preco": 20.00,
+            "imagem": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.pinterest.com%2Fpin%2F898116350677104637%2F&psig=AOvVaw2xNpFPiiMYBJxrIgCOGZNZ&ust=1721158516431000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIju6KLlqYcDFQAAAAAdAAAAABAE"
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@example.com",
+            "senha": "123456",
+            "endereco": {
+                "rua": "Rua dos Pinheiros",
+                "numero": 123,
+                "bairro": "Centro",
+                "cidade": "São Paulo",
+                "estado": "SP",
+                "cep": "01234-567"
+            }
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@example.com",
+            "senha": "abcdef",
+            "endereco": {
+                "rua": "Rua das Flores",
+                "numero": 456,
+                "bairro": "Jardim",
+                "cidade": "Rio de Janeiro",
+                "estado": "RJ",
+                "cep": "98765-432"
+            }
+        }
+    ],
+    "pedidos": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "data_pedido": "2022-01-01",
+            "status": "pendente",
+            "itens": [
+                {
+                    "produto_id": 1,
+                    "quantidade": 2,
+                    "preco_unitario": 1500
+                },
+                {
+                    "produto_id": 2,
+                    "quantidade": 1,
+                    "preco_unitario": 30
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "cliente_id": 2,
+            "data_pedido": "2022-01-15",
+            "status": "entregue",
+            "itens": [
+                {
+                    "produto_id": 3,
+                    "quantidade": 1,
+                    "preco_unitario": 50
+                }
+            ]
+        }
+    ]
+}
